@@ -6,6 +6,11 @@ public class SecondCallbackImpl implements SecondCallback {
 	
 	public SecondCallbackImpl() { }
 
+	public SecondCallbackImpl(SaveResult saveResult) {
+		super();
+		this.saveResult = saveResult;
+	}
+
 	@Override
 	public SaveResult callback() {
 		return saveResult;
