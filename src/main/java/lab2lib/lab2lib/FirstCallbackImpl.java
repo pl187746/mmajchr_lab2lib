@@ -22,7 +22,7 @@ public class FirstCallbackImpl implements FirstCallback {
 			String c = scanner.nextLine();
 			if(c.startsWith("T") || c.startsWith("t")) {
 				return scanner.nextLine();
-			} else {
+			} else if(c.startsWith("N") || c.startsWith("n")) {
 				return null;
 			}
 		}
