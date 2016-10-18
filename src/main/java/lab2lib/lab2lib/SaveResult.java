@@ -22,5 +22,37 @@ public class SaveResult {
 		this.correctMsg = correctMsg;
 		this.incorrectMsg = incorrectMsg;
 	}
+
+	public String getFileName() {
+		return fileName;
+	}
+
+	public void setFileName(String fileName) {
+		this.fileName = fileName;
+	}
+
+	public String getCorrectMsg() {
+		return correctMsg;
+	}
+
+	public void setCorrectMsg(String correctMsg) {
+		this.correctMsg = correctMsg;
+	}
+
+	public String getIncorrectMsg() {
+		return incorrectMsg;
+	}
+
+	public void setIncorrectMsg(String incorrectMsg) {
+		this.incorrectMsg = incorrectMsg;
+	}
+
+	public boolean isSuccess() {
+		return success;
+	}
+
+	public void setSuccess(boolean success) {
+		this.success = success;
+	}
 	
 }
