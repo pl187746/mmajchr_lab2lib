@@ -6,7 +6,7 @@ public class SecondCallbackImpl implements SecondCallback {
 
 	@Override
 	public SaveResult callback() {
-		return null;
+		return saveResult;
 	}
 
 }
