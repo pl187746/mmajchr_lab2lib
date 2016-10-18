@@ -11,6 +11,14 @@ public class SecondCallbackImpl implements SecondCallback {
 		this.saveResult = saveResult;
 	}
 
+	public SaveResult getSaveResult() {
+		return saveResult;
+	}
+
+	public void setSaveResult(SaveResult saveResult) {
+		this.saveResult = saveResult;
+	}
+
 	@Override
 	public SaveResult callback() {
 		return saveResult;
