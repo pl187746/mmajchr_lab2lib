@@ -13,8 +13,8 @@ public class FirstCallbackImpl implements FirstCallback {
 	}
 
 	@Override
-	public String callback(SecondCallback callback) {
-		SaveResult result = callback.callback();
+	public String callback(SecondCallback secondCallback) {
+		SaveResult result = secondCallback.callback();
 		if(result == null || result.isSuccess()) {
 			return null;
 		}
