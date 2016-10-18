@@ -18,6 +18,7 @@ public class FirstCallbackImpl implements FirstCallback {
 		if(result == null || result.isSuccess())
 			return null;
 		while(true) {
+			System.out.print("Czy chcesz zapisac plik pod inna nazwa? [T/N] ");
 			return null;
 		}
 	}
