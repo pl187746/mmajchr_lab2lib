@@ -2,6 +2,7 @@ package lab2lib.lab2lib;
 
 import java.util.Scanner;
 
+
 public class FirstCallbackImpl implements FirstCallback {
 	
 	private Scanner scanner;
@@ -13,6 +14,9 @@ public class FirstCallbackImpl implements FirstCallback {
 
 	@Override
 	public String callback(SecondCallback callback) {
+		SaveResult result = callback.callback();
+		if(result == null || result.isSuccess())
+			return null;
 		return null;
 	}
 
