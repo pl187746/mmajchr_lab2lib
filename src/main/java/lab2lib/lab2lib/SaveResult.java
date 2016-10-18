@@ -5,4 +5,6 @@ public class SaveResult {
 	private String correctMsg;
 	private String incorrectMsg;
 	private boolean success;
+	
+	public SaveResult() { }
 }
