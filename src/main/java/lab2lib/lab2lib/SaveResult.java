@@ -15,5 +15,12 @@ public class SaveResult {
 		this.incorrectMsg = incorrectMsg;
 		this.success = success;
 	}
+
+	public SaveResult(String fileName, String correctMsg, String incorrectMsg) {
+		super();
+		this.fileName = fileName;
+		this.correctMsg = correctMsg;
+		this.incorrectMsg = incorrectMsg;
+	}
 	
 }
