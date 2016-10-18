@@ -17,7 +17,9 @@ public class FirstCallbackImpl implements FirstCallback {
 		SaveResult result = callback.callback();
 		if(result == null || result.isSuccess())
 			return null;
-		return null;
+		while(true) {
+			return null;
+		}
 	}
 
 }
