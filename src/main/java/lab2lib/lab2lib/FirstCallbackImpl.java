@@ -21,6 +21,7 @@ public class FirstCallbackImpl implements FirstCallback {
 			System.out.print("Czy chcesz zapisac plik pod inna nazwa? [T/N] ");
 			String c = scanner.nextLine();
 			if(c.startsWith("T") || c.startsWith("t")) {
+				System.out.print("Nowa nazwa pliku: ");
 				return scanner.nextLine();
 			} else if(c.startsWith("N") || c.startsWith("n")) {
 				return null;
