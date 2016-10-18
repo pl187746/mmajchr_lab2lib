@@ -23,6 +23,7 @@ public class FirstCallbackImpl implements FirstCallback {
 			if(c.startsWith("T") || c.startsWith("t")) {
 				System.out.println("Poprzednie ustawienia: ");
 				System.out.println("Nazwa pliku: " + result.getFileName());
+				System.out.println("String powodzenia: " + result.getCorrectMsg());
 				System.out.print("Nowa nazwa pliku: ");
 				String newFileName = scanner.nextLine();
 				return newFileName;
