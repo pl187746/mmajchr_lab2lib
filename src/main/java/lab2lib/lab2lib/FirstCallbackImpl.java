@@ -15,8 +15,9 @@ public class FirstCallbackImpl implements FirstCallback {
 	@Override
 	public String callback(SecondCallback callback) {
 		SaveResult result = callback.callback();
-		if(result == null || result.isSuccess())
+		if(result == null || result.isSuccess()) {
 			return null;
+		}
 		while(true) {
 			System.out.print("Czy chcesz zapisac plik pod inna nazwa? [T/N] ");
 			String c = scanner.nextLine();
