@@ -24,6 +24,7 @@ public class FirstCallbackImpl implements FirstCallback {
 				System.out.println("Poprzednie ustawienia: ");
 				System.out.println("Nazwa pliku: " + result.getFileName());
 				System.out.println("String powodzenia: " + result.getCorrectMsg());
+				System.out.println("String niepowodzenia: " + result.getIncorrectMsg());
 				System.out.print("Nowa nazwa pliku: ");
 				String newFileName = scanner.nextLine();
 				return newFileName;
