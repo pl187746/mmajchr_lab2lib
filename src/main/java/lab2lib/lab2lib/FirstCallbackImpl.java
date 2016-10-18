@@ -12,6 +12,14 @@ public class FirstCallbackImpl implements FirstCallback {
 		this.scanner = scanner;
 	}
 
+	public Scanner getScanner() {
+		return scanner;
+	}
+
+	public void setScanner(Scanner scanner) {
+		this.scanner = scanner;
+	}
+
 	@Override
 	public String callback(SecondCallback secondCallback) {
 		SaveResult result = secondCallback.callback();
