@@ -1,23 +1,20 @@
 package lab2lib.lab2lib;
 
-import java.util.Scanner;
-
-
 public class FirstCallbackImpl implements FirstCallback {
 	
-	private Scanner scanner;
+	private SimpleUserInterface ui;
 
-	public FirstCallbackImpl(Scanner scanner) {
+	public FirstCallbackImpl(SimpleUserInterface ui) {
 		super();
-		this.scanner = scanner;
+		this.ui = ui;
 	}
 
-	public Scanner getScanner() {
-		return scanner;
+	public SimpleUserInterface getUi() {
+		return ui;
 	}
 
-	public void setScanner(Scanner scanner) {
-		this.scanner = scanner;
+	public void setUi(SimpleUserInterface ui) {
+		this.ui = ui;
 	}
 
 	@Override
@@ -27,15 +24,14 @@ public class FirstCallbackImpl implements FirstCallback {
 			return null;
 		}
 		while(true) {
-			System.out.print("Czy chcesz zapisac plik pod inna nazwa? [T/N] ");
-			String c = scanner.nextLine();
+			String c = ui.prompt("Czy chcesz zapisac plik pod inna nazwa? [T/N] ");
 			if(c.startsWith("T") || c.startsWith("t")) {
 				System.out.println("Poprzednie ustawienia: ");
 				System.out.println("Nazwa pliku: " + result.getFileName());
 				System.out.println("String powodzenia: " + result.getCorrectMsg());
 				System.out.println("String niepowodzenia: " + result.getIncorrectMsg());
 				System.out.print("Nowa nazwa pliku: ");
-				String newFileName = scanner.nextLine();
+				String newFileName = ui.prompt("Nowa nazwa pliku: ");
 				return newFileName;
 			} else if(c.startsWith("N") || c.startsWith("n")) {
 				return null;
