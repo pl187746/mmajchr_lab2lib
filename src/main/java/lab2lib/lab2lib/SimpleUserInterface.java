@@ -5,5 +5,7 @@ public interface SimpleUserInterface {
 	public void show(String message);
 
 	public String prompt(String prompt);
+	
+	public boolean promptYesNo(String prompt);
 
 }
