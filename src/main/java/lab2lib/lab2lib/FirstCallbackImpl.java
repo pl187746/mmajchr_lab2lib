@@ -23,18 +23,16 @@ public class FirstCallbackImpl implements FirstCallback {
 		if(result == null || result.isSuccess()) {
 			return null;
 		}
-		while(true) {
-			if(ui.promptYesNo("Czy chcesz zapisac plik pod inna nazwa?")) {
-				ui.show("Poprzednie ustawienia: ");
-				ui.show("Nazwa pliku: " + result.getFileName());
-				ui.show("String powodzenia: " + result.getCorrectMsg());
-				ui.show("String niepowodzenia: " + result.getIncorrectMsg());
-				ui.show("Nowa nazwa pliku: ");
-				String newFileName = ui.prompt("Nowa nazwa pliku: ");
-				return newFileName;
-			} else {
-				return null;
-			}
+		if(ui.promptYesNo("Czy chcesz zapisac plik pod inna nazwa?")) {
+			ui.show("Poprzednie ustawienia: ");
+			ui.show("Nazwa pliku: " + result.getFileName());
+			ui.show("String powodzenia: " + result.getCorrectMsg());
+			ui.show("String niepowodzenia: " + result.getIncorrectMsg());
+			ui.show("Nowa nazwa pliku: ");
+			String newFileName = ui.prompt("Nowa nazwa pliku: ");
+			return newFileName;
+		} else {
+			return null;
 		}
 	}
 
