@@ -26,11 +26,11 @@ public class FirstCallbackImpl implements FirstCallback {
 		while(true) {
 			String c = ui.prompt("Czy chcesz zapisac plik pod inna nazwa? [T/N] ");
 			if(c.startsWith("T") || c.startsWith("t")) {
-				System.out.println("Poprzednie ustawienia: ");
-				System.out.println("Nazwa pliku: " + result.getFileName());
-				System.out.println("String powodzenia: " + result.getCorrectMsg());
-				System.out.println("String niepowodzenia: " + result.getIncorrectMsg());
-				System.out.print("Nowa nazwa pliku: ");
+				ui.show("Poprzednie ustawienia: ");
+				ui.show("Nazwa pliku: " + result.getFileName());
+				ui.show("String powodzenia: " + result.getCorrectMsg());
+				ui.show("String niepowodzenia: " + result.getIncorrectMsg());
+				ui.show("Nowa nazwa pliku: ");
 				String newFileName = ui.prompt("Nowa nazwa pliku: ");
 				return newFileName;
 			} else if(c.startsWith("N") || c.startsWith("n")) {
