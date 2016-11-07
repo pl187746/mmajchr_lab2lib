@@ -28,7 +28,6 @@ public class FirstCallbackImpl implements FirstCallback {
 			ui.show("Nazwa pliku: " + result.getFileName());
 			ui.show("String powodzenia: " + result.getCorrectMsg());
 			ui.show("String niepowodzenia: " + result.getIncorrectMsg());
-			ui.show("Nowa nazwa pliku: ");
 			String newFileName = ui.prompt("Nowa nazwa pliku: ");
 			return newFileName;
 		} else {
