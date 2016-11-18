@@ -1,0 +1,11 @@
+language: java
+jdk:
+ - oraclejdk8
+after_success:
+ - chmod a+x after.sh
+ - ./after.sh
+branches:
+ only:
+ - master
+ except:
+ - bin
