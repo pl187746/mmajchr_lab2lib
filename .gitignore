@@ -1,6 +1,3 @@
-/target/*
-!/target/*.jar
-
 # Created by https://www.gitignore.io/api/maven,eclipse,macos
 
 ### Maven ###
