@@ -10,7 +10,7 @@ public class OnCloseCallbackImpl implements OnCloseCallback {
 
 	@Override
 	public boolean closing() {
-		return ui.promptYesNo("Napewno chcesz zamknac aplikacje?");
+		return ui.promptYesNo("Czy na pewno chcesz zamknac aplikacje?");
 	}
 
 }
